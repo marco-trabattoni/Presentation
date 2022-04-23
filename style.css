@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: white;
+  transition: 1s;
+}
+
+body.red {
+  background-color: black;
+}
+
+.spazio {
+  display: none;
+}
+
+
+.Firstimage {
+    display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+height: 100vh;
+  z-index: -1;
+}
+
+#image2 {
+  z-index: 200;
+}
+
+
+.myVideo {
+  display: none;
+  width: 100vw;
+ height: 100vh;
+ object-fit: cover;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 0;
+}
+
+
+#myVideo {
+  transition: 2s;
+  opacity: 1;
+}
+
+#myVideo.black {
+  opacity: 0;
+}
+
+button {
+  position: absolute;
+  z-index: 100;
+}
+
+.text {
+  position: absolute;
+  z-index: 100;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.demo {
+  display: inline-block;
+  height: 57.5px;
+  font-size: 50px;
+  font-family: "Helvetica Neue";
+  font-weight:normal;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1px solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em; */
+  animation: blink-caret 1.15s step-end 3;
+}
+
+#demo {
+  animation: blink-caret 1.15s step-end 3.8;
+}
+
+#line2 {
+  animation: blink-caret 1.15s step-end 4;
+}
+
+
+#line2, #line3, #line4, #line5, #line6, #line7, #line8, #line9, #line10, #line11, #line12, #line13, #line14, #line15, #line16, #line17, #line18 {
+  display: none;
+}
+
+#line7 {
+  animation: blink-caret 1.15s step-end 6;
+}
+
+
+ #line9, {
+ animation: blink-caret 1.15s step-end 2;
+}
+
+#line3, #line5   {
+animation: blink-caret 1.15s step-end 1;
+}
+
+#line11, #line12 {
+ animation: blink-caret 1.15s step-end 2;
+}
+
+
+
+
+#line12, #line13 {
+ color: lightgrey;
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0% { border-color: black }
+  50% { border-color: transparent }
+  100% { border-color: black }
+}
+
+
+.link {
+  color: black;
+}
